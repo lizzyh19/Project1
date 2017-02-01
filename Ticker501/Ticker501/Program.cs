@@ -66,6 +66,11 @@ namespace Ticker501
                     {
                         Console.WriteLine("You haven't made any portfolios!\n");
                     }
+                    else
+                    {
+                        Console.Write("selected portfolio");
+                    }
+                
 
                 }//end select portfolio
 
