@@ -68,7 +68,7 @@ namespace Ticker501
                     }
                     else
                     {
-                        Console.Write("selected portfolio");
+                        int portRet = Display.SelectPortfolio();
                     }
                 
 

@@ -40,5 +40,13 @@ namespace Ticker501
             return toReturn;
         }
 
+        public static int SelectPortfolio()
+        {
+            Console.WriteLine("\nSelect a portfolio: ");
+
+            int toReturn = Convert.ToInt32(Console.ReadLine());
+            return toReturn;
+        }
+
     }//end class
 }//end namespace
