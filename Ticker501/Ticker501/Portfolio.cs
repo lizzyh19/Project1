@@ -24,6 +24,7 @@ namespace Ticker501
         /// <param name="n">Given name of the portfolio</param>
         public Portfolio(string n)
         {
+            portBalance = 0;
             name = n;
         }
 
@@ -32,6 +33,8 @@ namespace Ticker501
         /// </summary>
         public void buyStock()
         {
+            Console.Write("Enter the stock's ticker: ");
+            string tick = Console.ReadLine();
 
         }
 

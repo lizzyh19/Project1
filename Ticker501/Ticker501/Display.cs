@@ -14,7 +14,7 @@ namespace Ticker501
         /// <returns>User's answer as an int</returns>
         public static int MainMenu()
         {
-            Console.WriteLine("\nSelect one of the following options, or any other key to quit: ");
+            Console.WriteLine("\nSelect one of the following options, or any other number to quit: ");
             Console.WriteLine("1) Manage Account\n2) Select Portfolio");
             Console.WriteLine("3) Create Portfolio\n4) Delete Portfolio");
             int toReturn = Convert.ToInt32(Console.ReadLine());

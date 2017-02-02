@@ -15,7 +15,7 @@ namespace Ticker501
         //value of stock in dollars
         public double value;
         //not relevant in main dictionary, given values for stocks in portfolios
-        public int shares;
+        public int shares = 0;
         public string ticker;
         public string name;
 

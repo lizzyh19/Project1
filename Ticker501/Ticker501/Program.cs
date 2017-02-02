@@ -17,7 +17,7 @@ namespace Ticker501
         /// Controls whole program
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //creates user's account
             Account account = new Account();
@@ -147,7 +147,10 @@ namespace Ticker501
                         //found portfolio
                         else
                         {
+                            Portfolio entering;
+                            portfolios.TryGetValue(selected, out entering);
                             Console.WriteLine("Successfully found portfolio");
+                            entering.EnterPortfolio();
                         }
                     }
 
