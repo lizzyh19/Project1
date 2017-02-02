@@ -56,6 +56,12 @@ namespace Ticker501
                     {
                         continue;
                     }
+                    //invalid input
+                    else
+                    {
+                        Console.WriteLine("Error, returning to Main Menu");
+                        continue;
+                    }
                 }//end manage account
 
                 //select portfolio
@@ -68,9 +74,26 @@ namespace Ticker501
                     }
                     else
                     {
-                        int portRet = Display.SelectPortfolio();
+                        foreach(string k in portfolios.Keys)
+                        {
+                            Portfolio v;
+                            portfolios.TryGetValue(k, out v);
+                            Console.WriteLine(v.ToString());
+                        }
+
+                        Console.WriteLine("Type the name of the portfolio to select from above list: ");
+                        string selected = Console.ReadLine();
+                        if(!portfolios.ContainsKey(selected) )
+                        {
+                            Console.WriteLine("That portfolio doesn't exist, returning to Main Menu");
+                            continue;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Successfully found portfolio");
+                        }
                     }
-                
+
 
                 }//end select portfolio
 
