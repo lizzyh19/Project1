@@ -42,11 +42,18 @@ namespace Ticker501
         {
             Console.WriteLine("\nSelect how you would like to view your balance: ");
             Console.WriteLine("1) Cash Positions\n2) Position Balance");
-            Console.WriteLine("3) Gain/Loss Report\n4) Back to Accoun Menu");
+            Console.WriteLine("3) Gain/Loss Report\n4) Back to Main Menu");
             int toReturn = Convert.ToInt32(Console.ReadLine());
             return toReturn;
         }
 
+        public static int PortfolioMenu()
+        {
+            Console.WriteLine("\nWhat would you like to do with this portfolio? ");
+            Console.WriteLine("1) View Portfolio Balance\n2) Buy Stock");
+            int toReturn = Convert.ToInt32(Console.ReadLine());
+            return toReturn;
+        }
 
 
     }//end class

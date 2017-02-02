@@ -27,6 +27,13 @@ namespace Ticker501
 
         }//end default constructor
 
+        public Stock(string tickerIn, string nameIn, double amtIn)
+        {
+            ticker = tickerIn;
+            name = nameIn;
+            value = amtIn;
+        }
+
 
     }//end class
 }//end namespace

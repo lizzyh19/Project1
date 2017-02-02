@@ -35,6 +35,21 @@ namespace Ticker501
 
         }
 
+        public void EnterPortfolio()
+        {
+            int response = Display.PortfolioMenu();
+            //portfolio balance
+            if (response == 1)
+            {
+                int balanceResponse = Display.BalanceMenu();
+            }
+            //buy stock
+            else
+            {
+                buyStock();
+            }
+        }
+
         /// <summary>
         /// Overrides ToString to just display the name of the stock
         /// </summary>
@@ -43,6 +58,7 @@ namespace Ticker501
         {
             return name;
         }
+
 
 
     }//end class
